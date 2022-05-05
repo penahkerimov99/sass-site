@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  font-size: 14px;
+  line-height: 1.2rem;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainphoto {
+  background-image: url("img/bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 15vh;
+  position: relative;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0 0 5rem;
+}
+
+nav .menu {
+  margin: 1rem 6rem 0 0;
+}
+
+nav .menu .a1 {
+  border-bottom: solid 3px red;
+}
+
+nav .menu .a1:hover {
+  border-bottom: solid 3px red;
+}
+
+nav .menu a {
+  padding: 1.5rem;
+}
+
+nav .menu a:hover {
+  border-bottom: solid 3px green;
+}
+
+header .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: solid 2px orangered;
+}
+
+header .about .tittle1 {
+  margin: 3rem;
+}
+
+header .about .line {
+  width: 4rem;
+  border: solid 1px orangered;
+}
+
+header .about .tittle2 {
+  width: 70%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+main .photobar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+main .photobar .photo1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  height: 25rem;
+  margin: 1.5rem;
+}
+
+main .photobar .photo1 img:hover {
+  width: 40rem;
+  height: 40rem;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+main .photobar .tittles {
+  background-color: #e6d3d3;
+  width: 100%;
+  height: 6rem;
+}
+
+main .photobar .tittles p {
+  margin-top: 0.2rem;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 4rem;
+  margin-top: 1rem;
+}
+
+footer .tittle9 {
+  width: 50%;
+  margin: 2rem;
+}
+
+footer .tittle9 a {
+  text-decoration: underline;
+}
+
+footer .iconbar3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 2rem;
+}
+
+footer .iconbar3 .icon4 {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: solid 2px white;
+  padding: 0.34rem;
+  margin: 0.5rem;
+}
+
+footer .iconbar3 .icon4:hover {
+  opacity: 0.5;
+}
+
+footer .iconbar3 .icon4 i {
+  font-size: 1rem;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 7px;
+  }
+  .logo {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem 0 0 5rem;
+  }
+}
+/*# sourceMappingURL=projects.css.map */
