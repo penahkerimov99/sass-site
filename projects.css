@@ -137,17 +137,27 @@ main .photobar .photo1 {
   width: 25%;
   height: 25rem;
   margin: 1.5rem;
+  position: relative;
+  overflow: hidden;
 }
 
-main .photobar .photo1 img:hover {
-  width: 40rem;
-  height: 40rem;
+main .photobar .photo1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: red;
   position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
+  opacity: 0.7;
+  top: 0;
+  -webkit-transform: translateX(-100%) translateY(-140%) rotate(45deg);
+          transform: translateX(-100%) translateY(-140%) rotate(45deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+main .photobar .photo1:hover::after {
+  -webkit-transform: translateX(-55%) translateY(-72%) rotate(45deg);
+          transform: translateX(-55%) translateY(-72%) rotate(45deg);
 }
 
 main .photobar .tittles {
